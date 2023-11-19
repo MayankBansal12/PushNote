@@ -181,14 +181,6 @@ const Home = () => {
           </p>
           <div className="grid md:grid-cols-3 text-start">
             <div className="grid max-w-sm border shadow-lg rounded-sm px-4 py-4 mx-2 my-2">
-              <div className="grid justify-items-center"><img className="rounded-full w-[100px] h-[100px]" src="https://res.cloudinary.com/dtdsi5sev/image/upload/v1700327557/Screenshot_2023-11-18_224117_aimlqm.png" alt="mayank" /></div>
-              <p className="text-md lg:text-lg font-medium text-center">
-                Mayank Bansal
-              </p>
-              <p className="text-center space-x-2"><Link to="https://twitter.com/SimplerMayank"><TwitterIcon /></Link> <Link to="https://github.com/MayankBansal12"><GitHubIcon /></Link> </p>
-              <p className="text-center px-4 py-2">Full-Stack  Developer ⁍⁌ DSA in Java ⁍⁌ Looking for web dev projects to contribute ^-^*</p>
-            </div>
-            <div className="grid max-w-sm border shadow-lg rounded-sm px-4 py-4 mx-2 my-2">
               <div className="grid justify-items-center"><img className="rounded-full w-[100px] h-[100px]" src="https://avatars.githubusercontent.com/u/84245432?v=4" alt="arghya" /></div>
               <p className="text-md lg:text-lg font-medium text-center">
                 Arghya Das
@@ -203,6 +195,14 @@ const Home = () => {
               </p>
               <p className="text-center space-x-2"><Link to="https://twitter.com/saakshitwt"><TwitterIcon /></Link> <Link to="https://github.com/saakshiraut28"><GitHubIcon /></Link> </p>
               <p className="text-center px-4 py-2">Google DSC CORE'23 | Loves to Code 👩‍💻| Web Designer/Developer 🕸️| Open-source Contributor 🚀 | Tech Blogger.</p>
+            </div>
+            <div className="grid max-w-sm border shadow-lg rounded-sm px-4 py-4 mx-2 my-2">
+              <div className="grid justify-items-center"><img className="rounded-full w-[100px] h-[100px]" src="https://res.cloudinary.com/dtdsi5sev/image/upload/v1700327557/Screenshot_2023-11-18_224117_aimlqm.png" alt="mayank" /></div>
+              <p className="text-md lg:text-lg font-medium text-center">
+                Mayank Bansal
+              </p>
+              <p className="text-center space-x-2"><Link to="https://twitter.com/SimplerMayank"><TwitterIcon /></Link> <Link to="https://github.com/MayankBansal12"><GitHubIcon /></Link> </p>
+              <p className="text-center px-4 py-2">&lt; Web Developer /&gt; ⁍⁌ Looking for web dev projects to contribute (·.·)</p>
             </div>
           </div>
         </section>
