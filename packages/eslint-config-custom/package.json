@@ -1,11 +1,16 @@
 {
   "name": "eslint-config-custom",
-  "license": "MIT",
   "version": "0.0.0",
   "private": true,
-  "devDependencies": {
-    "@vercel/style-guide": "^5.0.0",
-    "eslint-config-turbo": "^1.10.12",
-    "typescript": "^5.2.2"
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-turbo": "latest",
+    "eslint-plugin-react": "7.28.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
