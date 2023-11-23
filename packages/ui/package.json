@@ -21,7 +21,6 @@
     "preset": "jest-presets/jest/node"
   },
   "devDependencies": {
-    "@types/dotenv": "^8.2.0",
     "@types/jest": "^26.0.22",
     "@types/node": "^20.9.4",
     "@types/react": "^17.0.13",
