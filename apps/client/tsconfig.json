@@ -2,6 +2,7 @@
   "exclude": ["node_modules"],
   "extends": "tsconfig/vite.json",
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "rootDir": "src",
     "outDir": "dist"
   },
