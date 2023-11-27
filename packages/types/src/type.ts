@@ -1,19 +1,4 @@
-import { AlertColor } from '@mui/material/Alert'
 import { Types } from "mongoose";
-
-// ---------- Global Types---------
-export interface AlertPromptProps {
-    open: boolean,
-    setOpen: React.Dispatch<React.SetStateAction<boolean>>,
-    eventType?: AlertColor
-    text: string
-}
-
-export interface AlertTextdef {
-    open: boolean,
-    text: string,
-    eventType: AlertColor
-}
 
 export type loginParams = {
     email: string,
@@ -113,7 +98,6 @@ export interface IOrganisation extends Document {
     projects?: projectType[],
     users?: userType[]
 }
-
 
 // Interface for chatSendInput
 export interface sendChatIp {

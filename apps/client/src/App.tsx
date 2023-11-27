@@ -15,6 +15,7 @@ import ProjectDash from "./pages/ProjectDash";
 import TaskPage from "./pages/TaskPage";
 import UserProfile from "./pages/UserProfile";
 import Messages from "./pages/Messages";
+import Chat from "./pages/Chat";
 import ProjectList from "./pages/ProjectList";
 import Calendar from "./pages/Calendar";
 import OrgDashboard from "./pages/OrgDashboard";
@@ -23,7 +24,6 @@ import OrgUser from "./pages/OrgUser";
 //      Components
 import AlertPrompt from "./components/AlertPrompt";
 import Loading from "./components/Loading";
-import Chat from "./components/Chat";
 
 const backend = import.meta.env.VITE_SERVER;
 

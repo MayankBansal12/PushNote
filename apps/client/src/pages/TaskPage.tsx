@@ -5,7 +5,7 @@ import CommentIcon from '@mui/icons-material/Comment';
 import SendIcon from '@mui/icons-material/Send';
 import Comment from "../components/Comment";
 import { makeRequest } from "../utils/api";
-import { ITask, commentType, userType } from "../types/types";
+import { ITask, userType } from "../types/types";
 import { formatDate } from "../utils/formatDate";
 import { useRecoilState } from 'recoil';
 import { alertAtom } from "../atom/global";

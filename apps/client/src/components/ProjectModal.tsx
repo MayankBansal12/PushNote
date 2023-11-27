@@ -22,7 +22,6 @@ const style = {
   p: 4,
 };
 
-
 export default function ProjectModal() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);

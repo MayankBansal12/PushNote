@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import EditIcon from '@mui/icons-material/Edit';
-import { Divider, Chip, Button, Skeleton } from "@mui/material";
+import { Divider, Chip, Skeleton } from "@mui/material";
 import SideBar from "../components/SideBar";
 import { useRecoilState } from "recoil";
 import { alertAtom } from "../atom/global";

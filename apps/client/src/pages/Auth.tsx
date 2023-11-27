@@ -3,10 +3,11 @@ import { TextField, Button } from "@mui/material";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useRecoilState } from 'recoil';
-import { alertAtom, loadingAtom } from "../atom/global";
+import { alertAtom } from "../atom/global";
 import { loginParams, signupParams } from "../types/types";
-import { messaging } from "../firebase.js";
+import { messaging } from "../firebase";
 import { getToken } from "firebase/messaging";
+
 const path = "../../firebase-messaging-sw.js";
 const backend = import.meta.env.VITE_SERVER;
 

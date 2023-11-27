@@ -3,8 +3,6 @@ import { atom } from "recoil"
 
 // Types and interfaces
 import { AlertTextdef } from "../types/types"
-// --------------------
-
 
 export const alertAtom = atom({
     key: 'alertText',

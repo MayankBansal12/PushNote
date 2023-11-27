@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import OrgSidebar from "../components/OrgSidebar";
-import { Button, TextField, InputLabel, MenuItem, FormControl, Select, SelectChangeEvent, Divider } from "@mui/material";
+import { Button, TextField, InputLabel, MenuItem, FormControl, Select, Divider } from "@mui/material";
 import { makeRequest } from "../utils/api";
 import { useRecoilState } from "recoil";
 import { userAtom } from "../atom/user";

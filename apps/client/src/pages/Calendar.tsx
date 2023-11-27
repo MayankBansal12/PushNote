@@ -32,7 +32,7 @@ const Calendar = () => {
         const fetchTasks = async () => {
             try {
                 const allTasks = [];
-                for (let project of user?.projects) {
+                for (let project of user.projects || []) {
                     const res = await makeRequest(`/project/${project.projectId}/task?status=pending&assignTo=${user._id}`);
                     allTasks.push(...res.data.tasks);
                 }

@@ -2,7 +2,7 @@ import React from "react";
 import { List, ListItem, ListItemButton, ListItemText } from "@mui/material"
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { makeRequest } from "../utils/api";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Types } from "mongoose";
 import { useRecoilState } from "recoil";
 import { alertAtom } from "../atom/global";
@@ -12,7 +12,7 @@ interface ListsProps {
     members: userType[] | undefined;
     showDelete: boolean,
     admin: boolean,
-    userId: Types.ObjectId
+    userId: Types.ObjectId | null
 }
 
 const Lists: React.FC<ListsProps> = ({ members, showDelete = false, admin = false, userId = null }) => {

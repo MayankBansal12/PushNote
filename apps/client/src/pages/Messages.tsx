@@ -42,7 +42,6 @@ const Messages = () => {
         }
     }, []);
 
-
     // For fetching users in the organisation
     useEffect(() => {
         const fetchUsers = async () => {

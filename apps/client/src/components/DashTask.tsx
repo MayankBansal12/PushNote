@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Stack, Chip } from "@mui/material";
 import { Skeleton } from "@mui/material";
-import { IProject, ITask } from "../types/types";
+import { ITask } from "../types/types";
 import { Types } from "mongoose";
 import { makeRequest } from "../utils/api";
 import { useRecoilState } from 'recoil';

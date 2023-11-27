@@ -12,20 +12,13 @@ import ProjectModal from "./ProjectModal";
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const SideBar = () => {
+    const navigate = useNavigate();
     const [currentDate, setCurrentDate] = useState(new Date());
     const [day, setDay] = useState('');
     const [month, setMonth] = useState('');
     const [dayOfWeek, setDayOfWeek] = useState('');
     const [value, setValue] = useState(0);
-
-    const navigate = useNavigate();
-
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
     const [user, setUser] = useRecoilState(userAtom);
-
     const [openDialog, setOpenDialog] = useState(false);
 
     const handleDialogOpen = () => {
@@ -188,7 +181,7 @@ const SideBar = () => {
                             <BottomNavigationAction href="/calendar" label="Calendar" icon={<CalendarMonthIcon />} />
                         </Tooltip>
                         <Tooltip title="Chats">
-                            <BottomNavigationAction href="/messages" label="Messages" icon={<MarkChatUnreadIcon />} />
+                            <BottomNavigationAction href="/messages" label="Chats" icon={<MarkChatUnreadIcon />} />
                         </Tooltip>
                         <Tooltip title="Logout">
                             <BottomNavigationAction label="Logout" onClick={handleDialogOpen} icon={<LogoutIcon />} />

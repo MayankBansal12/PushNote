@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
@@ -12,7 +12,6 @@ import { alertAtom } from '../atom/global';
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const [task, setTask] = useState(false);
   const [user, setUser] = useRecoilState(userAtom);
   const [alertState, setalertState] = useRecoilState(alertAtom);
 

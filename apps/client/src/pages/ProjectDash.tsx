@@ -14,6 +14,7 @@ import { userAtom } from '../atom/user';
 import TaskModal from "../components/TaskModal";
 import EditProjectModal from "../components/EditProjectModal";
 import OrgSidebar from "../components/OrgSidebar";
+import { Types } from "mongoose";
 
 const ProjectDash = () => {
     const [project, setProject] = useState<IProject>();
@@ -178,7 +179,7 @@ const ProjectDash = () => {
                             <div className="flex gap-4 flex-col">
                                 {project.tasks && project.tasks.length > 0 ? (
                                     project.tasks.map((task, i) => (
-                                        <Task key={i} taskId={task.taskId} projectId={projectId} />
+                                        <Task key={i} taskId={task.taskId} projectId={new Types.ObjectId(projectId)} />
                                     ))
                                 ) : (
                                     <div className="flex items-center justify-center h-32 text-center text-gray-700">

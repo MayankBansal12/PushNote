@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
-
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { userAtom } from '../atom/user';
 import { makeRequest } from '../utils/api';
@@ -9,7 +8,6 @@ import OrgSidebar from '../components/OrgSidebar';
 const OrgDashboard = () => {
     const navigate = useNavigate();
     const [user, setUser] = useRecoilState(userAtom);
-
 
     // To fetch org details for the dashboard
     useEffect(() => {

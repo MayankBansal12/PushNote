@@ -5,7 +5,6 @@ import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import { useRecoilState } from 'recoil';
 import { alertAtom } from "../atom/global"
 
-
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   props,
   ref,

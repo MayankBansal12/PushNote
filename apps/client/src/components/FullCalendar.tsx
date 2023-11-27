@@ -10,8 +10,13 @@ interface FullCalendarProps {
   tasks: ITask[];
 }
 
+type DeadlineType = {
+  title: string,
+  date: Date | undefined
+}
+
 export default function FullCalendar({ tasks }: FullCalendarProps) {
-  const [deadline, setDeadline] = useState<Date[]>([]);
+  const [deadline, setDeadline] = useState<DeadlineType[]>([]);
 
   useEffect(() => {
     const deadlines = tasks?.map((task: ITask) => ({
