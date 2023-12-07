@@ -1,19 +1,13 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/public/firebase-messaging-sw.js",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
+        { "key": "Content-Type", "value": "application/javascript" }
       ]
     }
   ],
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
